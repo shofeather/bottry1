@@ -87,7 +87,16 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                         $greetings = new TextMessageBuilder("Halo, " . $profile['displayName'] . "\n(" . $profile['userId'] . ")");
 
                         $result = $bot->replyMessage($event['replyToken'], $greetings);
-                        $flexTemplate = file_get_contents("../flex_message.json"); // template flex message
+                        $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
+                        return $response
+                            ->withHeader('Content-Type', 'application/json')
+                            ->withStatus($result->getHTTPStatus());
+                    }
+                } else {
+                    if ($event['message']['type'] == 'text') {
+                        if (strtolower($event['message']['text']) == '/halo') {
+
+                            $flexTemplate = file_get_contents("../flex_message.json"); // template flex message
                             $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
                                 'replyToken' => $event['replyToken'],
                                 'messages'   => [
@@ -98,16 +107,6 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                                     ]
                                 ],
                             ]);
-                        $response->getBody()->write(json_encode($result->getJSONDecodedBody()));
-                        return $response
-                            ->withHeader('Content-Type', 'application/json')
-                            ->withStatus($result->getHTTPStatus());
-                    }
-                } else {
-                    if ($event['message']['type'] == 'text') {
-                        if (strtolower($event['message']['text']) == 'user id') {
-
-                            $result = $bot->replyText($event['replyToken'], $event['source']['userId']);
                         } else if (strtolower($event['message']['text']) == '/cekkalori') {
 
                             $flexTemplate = file_get_contents("../flex_message.json"); // template flex message
