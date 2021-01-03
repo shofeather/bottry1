@@ -96,7 +96,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                     if ($event['message']['type'] == 'text') {
                         if (strtolower($event['message']['text']) == '/halo') {
 
-                            $flexTemplate = file_get_contents("../flex_message.json"); // template flex message
+                            $flexTemplate = file_get_contents("../template_header.json"); // template flex message
                             $result = $httpClient->post(LINEBot::DEFAULT_ENDPOINT_BASE . '/v2/bot/message/reply', [
                                 'replyToken' => $event['replyToken'],
                                 'messages'   => [
