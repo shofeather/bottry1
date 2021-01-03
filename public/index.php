@@ -15,8 +15,8 @@ use \LINE\LINEBot\SignatureValidator as SignatureValidator;
 $pass_signature = true;
 
 // set LINE channel_access_token and channel_secret
-$channel_access_token = "PD5EY+t69xpJSSbNfdJJPMFT9xzVNLkSKvy9dHNTqB02DpsXx+76mU5/aReFT2G7yj2Brpm17NVAEVVNGv9DnMNZYiM5MMwVUyXulaPWUOV+TJq7MmMecIDbKg7RKv19Gp+FIOmbJ6/RzU7pkXtf9gdB04t89/1O/w1cDnyilFU=";
-$channel_secret = "d552f2dbe54c4a642516763b048170cc";
+$channel_access_token = "4iQ+2Ya1A7qJSqxScE7ZBgcaik83ZgeIXik5a2d/XPj12NqSsQMwULYGcMh9Z9r1LyQ+H4R2ezjwiRO1XElbsNRJ1KOKbMBhCbfjT88+cCFaWXUCurlE8DTmQ3vC5BLS/s221g1KyJa3JMhJBqspDAdB04t89/1O/w1cDnyilFU=";
+$channel_secret = "c340eb09e95b3d8cfd144a3ca6162e4c";
 
 // inisiasi objek bot
 $httpClient = new CurlHTTPClient($channel_access_token);
@@ -141,7 +141,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
 
 $app->get('/pushmessage', function ($req, $response) use ($bot) {
     // send push message to user
-    $userId = 'U37b2318fab0191d7958bc0b4a3ad9724'; //Isi dengan User ID anda/orang lain
+    $userId = 'U239c9c0f521bfcdcd144f081c6cfdf47'; //Isi dengan User ID anda/orang lain
     $textMessageBuilder = new TextMessageBuilder('Halo, ini pesan push');
     $result = $bot->pushMessage($userId, $textMessageBuilder);
 
@@ -155,7 +155,7 @@ $app->get('/pushmessage', function ($req, $response) use ($bot) {
 $app->get('/multicast', function ($req, $response) use ($bot) {
     // list of users
     $userList = [
-        'U37b2318fab0191d7958bc0b4a3ad9724', //Isi dengan User ID anda/orang lain
+        'U239c9c0f521bfcdcd144f081c6cfdf47', //Isi dengan User ID anda/orang lain
     ];
 
     // send multicast message to user
