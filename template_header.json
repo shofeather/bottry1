@@ -55,7 +55,7 @@
         "action": {
           "type": "postback",
           "label": "Cek Kalori",
-          "displayText": "Cek Kalori",
+          "displayText": "/cekkalori",
           "data": "/cekkalori"
         }
       }
