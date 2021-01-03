@@ -122,7 +122,7 @@ $app->post('/webhook', function (Request $request, Response $response) use ($cha
                             ]);
                         } else {
                             // send same message as reply to user
-                            $result = $bot->replyText($event['replyToken'], ."Harap Masukkan Keyword yang sesuai seperti : /mulai dan /cekkalori".);
+                            $result = $bot->replyText($event['replyToken'], 'Harap Masukkan Keyword yang sesuai seperti : /mulai dan /cekkalori');
                         }
 
                         $response->getBody()->write($result->getJSONDecodedBody());
