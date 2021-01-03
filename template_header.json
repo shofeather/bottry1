@@ -53,10 +53,9 @@
         "type": "button",
         "style": "primary",
         "action": {
-          "type": "postback",
+          "type": "message",
           "label": "Cek Kalori",
-          "displayText": "/cekkalori",
-          "data": "/cekkalori"
+          "text": "/cekkalori"
         }
       }
     ]
