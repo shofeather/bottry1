@@ -17,7 +17,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "Pecel Lele",
+            "text": "Kalori Pecel Lele",
             "weight": "bold",
             "size": "sm",
             "wrap": true
@@ -53,7 +53,7 @@
               },
               {
                 "type": "text",
-                "text": "4.0",
+                "text": "292 Kal",
                 "size": "xs",
                 "color": "#8c8c8c",
                 "margin": "md",
@@ -72,7 +72,7 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Pecel Lele dengan Sambal TerEnduuull",
+                    "text": "1 Porsi Pecel Lele mengandung 292 Kalori",
                     "wrap": true,
                     "color": "#8c8c8c",
                     "size": "xs",
@@ -103,7 +103,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "Ayam Penyet",
+            "text": "Kalori Ayam Penyet",
             "weight": "bold",
             "size": "sm",
             "wrap": true
@@ -139,7 +139,7 @@
               },
               {
                 "type": "text",
-                "text": "4.0",
+                "text": "199 Kal",
                 "size": "sm",
                 "color": "#8c8c8c",
                 "margin": "md",
@@ -158,7 +158,7 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Ayam Penyet dengan Sambal TerEnduuull",
+                    "text": "100gr Ayam Penyet mengandung 199 Kalori",
                     "wrap": true,
                     "color": "#8c8c8c",
                     "size": "xs",
@@ -189,7 +189,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "Tempe Penyet",
+            "text": "Kalori Tempe Penyet",
             "weight": "bold",
             "size": "sm"
           },
@@ -224,7 +224,7 @@
               },
               {
                 "type": "text",
-                "text": "4.0",
+                "text": "595 Kal",
                 "size": "sm",
                 "color": "#8c8c8c",
                 "margin": "md",
@@ -243,7 +243,7 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Tempe Penyet Dengan Sambal TerEnduuull",
+                    "text": "1 Porsi Tempe Penyet mengandung 595 Kalori",
                     "wrap": true,
                     "color": "#8c8c8c",
                     "size": "xs",
