@@ -1,0 +1,74 @@
+{
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Header Line Bot Flex",
+          "weight": "bold"
+        }
+      ]
+    },
+    "hero": {
+      "type": "image",
+      "url": "https://www.dicoding.com/images/small/academy/menjadi_android_developer_expert_logo_041217105708.png",
+      "size": "full",
+      "aspectRatio": "4:3",
+      "aspectMode": "cover"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Judul Kontennya",
+          "size": "sm",
+          "color": "#c9302c",
+          "weight": "bold"
+        },
+        {
+          "type": "text",
+          "text": "oleh: sempatpanick",
+          "size": "sm",
+          "color": "#c9302c"
+        },
+        {
+          "type": "text",
+          "text": "Bagaimana menampilkan flex message pada chat bot line.",
+          "size": "sm",
+          "wrap": true,
+          "margin": "lg"
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "horizontal",
+      "spacing": "sm",
+      "contents": [
+        {
+          "type": "button",
+          "style": "secondary",
+          "action": {
+            "type": "postback",
+            "label": "Button 1",
+            "displayText": "Button 1",
+            "data": "Button 1"
+          }
+        },
+        {
+          "type": "button",
+          "style": "primary",
+          "action": {
+            "type": "postback",
+            "label": "Button 2",
+            "displayText": "Button 2",
+            "data": "Button 2"
+          }
+        }
+      ]
+    }
+  }
